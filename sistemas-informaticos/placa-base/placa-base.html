@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>placa-base.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p><img src="junta-andalucia-moddle.png" alt=""></p>
+<h1 id="sistemas-inform%C3%A1ticos">SISTEMAS INFORMÁTICOS</h1>
+<h2 id="enunciado">Enunciado:</h2>
+<p>Busca en internet placas base con factores de forma ATX, miniATX y microATX (dos de cada factor de forma). Analiza las dimensiones y capacidad de expansión de cada una de ellas. Elabora un documento con un procesador de texto en formato pdf para entregar la tarea (en el nombre de este fichero debe aparecer vuestro nombre).</p>
+<h2 id="%C2%BFqu%C3%A9-significan-atx-mini-itx-y-micro-atx">¿Qué significan ATX, mini-ITX y micro-ATX?</h2>
+<p>Son factores de forma, con esas definiciones podemos saber las medidas de la placa base y así poder saber su compatibilidad con el chasis y estimar su capacidad de expansión y fuente de energía a utilizar.</p>
+<p>Una puntualización: el enunciado menciona las placas mini-ATX, existieron pero totalmente obsoleto hoy en día, hay poca información respecto a ello y las fuentes son de dudosa calidad. Para este trabajo se hablará de las placas mini-ITX.</p>
+<h2 id="definici%C3%B3n-de-factor-de-forma">Definición de factor de forma</h2>
+<p>Hay muchísimas, algunas salen adelante y otras por fortuna o desgracia caen en el olvido. El más popular y común es el formato ATX<sup>1</sup>.</p>
+<p>Cada factor de forma definen unas pautas y reglas de cómo deben ser sus medidas, orificios, limitaciones y distribución de la energía. Siendo el modelo ATX el que más capacidades de expansión ofrece dado su generoso tamaño y siendo el mini-ITX el que menos, pues tiene el tamaño justo para colocar la memoria y una sola ranura de expansión.</p>
+<h2 id="atx">ATX</h2>
+<p>Es el estándar de facto y el primero que se diseñó, en 1995 por Intel, donde la mayoría de las placas se fabrican en ese formato y la mayoría de los chasis se fabrican para este formato.</p>
+<h3 id="medidas">Medidas</h3>
+<p>Sus medidas son 305 x 244 mm (12 x 9.6 pulgadas) y consta de 9 orificios para su montaje.</p>
+<h3 id="expansi%C3%B3n">Expansión</h3>
+<p>Sus capacidades de expansión varían según el diseño del fabricante, (fig. 1 y fig. 2), la primera fue diseñada para el Intel Core 2 Duo, del 2006 y la segunda es para el Core i9 9900K, del 2020.</p>
+<table>
+<thead>
+<tr>
+<th>fig. 1</th>
+<th>fig. 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://m.media-amazon.com/images/I/71Ctc-LC+cL._AC_SX679_.jpg" alt="fig. 1"></td>
+<td><img src="https://media.ldlc.com/r1600/ld/products/00/05/91/37/LD0005913716_1.jpg" alt="fig. 2"></td>
+</tr>
+</tbody>
+</table>
+<p>Como se puede observar, ambas placas tienen capacidades de expansión pero muy distintas ya que en la actualidad hay una tendencia de poner menos ranuras de expansión, dejando mucho espacio entre ellas por dos razones:</p>
+<ul>
+<li>Insertar conectores en formato M.2</li>
+<li>Tarjetas gráficas de gran tamaño debido a su disipador.</li>
+</ul>
+<p>Cosa que antiguamente no existía el formato M.2 ni el disipador de las tarjetas gráficas eran tan grandes.</p>
+<h3 id="pero">Pero...</h3>
+<p>Pese a todo lo que se ha descrito anteriormente hace referencia a modelos y fabricantes generalistas, sin embargo hay fabricantes en que se especializan en diseñar placas para todo tipo de necesidades, <a href="https://www.advantech.com/products/5f275228-3385-4034-b102-3bc63b149d4e/aimb-787/mod_017485a9-ed5b-4b09-9843-e7a2baa28d16">aquí un ejemplo</a>.</p>
+<h3 id="no-s%C3%B3lo-son-medidas-y-capacidades-de-expansi%C3%B3n">No sólo son medidas y capacidades de expansión</h3>
+<p>El factor de forma ATX también implica respetar unas pautas y normativa sobre dónde y cómo colocar todos los componentes, que van desde las tomas de corriente hasta el posicionamiento de los conectores SATA, pasando por el posicionamiento de los bancos de memoria RAM, módulos PCI y los <em>chipsets</em>. <a href="https://web.aub.edu.lb/pub/docs/atx_201.pdf">Consultar página 11</a> para ver las especificaciones técnicas de la versión 2.01.</p>
+<h2 id="micro-atx">Micro-ATX</h2>
+<p>La segunda más popular de la lista, originada en 1997, que deriva de ATX, siendo ésta un 25% más pequeña pero conservando toda la compatibilidad con ATX, también desarrollado por Intel.</p>
+<h3 id="medidas">Medidas</h3>
+<p>Sus medidas son 244 x 244 mm (9.6 x 9.6 pulgadas) y consta de 8 orificios para su montaje.</p>
+<h3 id="expansi%C3%B3n">Expansión</h3>
+<p>Lo único que varía es que tiene como máximo 4 ranuras de expansión, 4 menos que el formato ATX y los primeros 6 orificios de montaje coinciden, mientras que la última fila sólo tienen dos, más cerca de los anteriores.</p>
+<table>
+<thead>
+<tr>
+<th>fig. 4</th>
+<th>fig. 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://cdn.coolmod.com/images/product/large/asus-prime-b450m-k-ii-socket-am4-placa-base-003.jpg" alt="fig. 4"></td>
+<td><img src="https://cdn.coolmod.com/images/product/large/PROD-016514_2.jpg" alt="fig. 5"></td>
+</tr>
+</tbody>
+</table>
+<p>Ambas placas son del mismo tamaño pero con capacidades de expansión diferente. En fig. 4 es de gama baja y en fig. 5 es de gama alta.</p>
+<p>Se pueden apreciar cómo en el de gama alta sacrifican una ranura PCIe x1 para ganar espacio y colocar dos interfaces M.2 además de tener 4 ranuras DIMM, cosa que en el de gama baja sólo tiene una interfaz M.2 y solamente 2 ranuras DIMM.</p>
+<h2 id="mini-itx">Mini-ITX</h2>
+<p>Desarrollado por VIA en 2001, siendo aun más pequeñas que las anteriores, permitiendo compatbilidad con las placas ATX (posicionamiento de las ranuras de expansión y orificios de montaje).</p>
+<h3 id="medidas">Medidas</h3>
+<p>Sus medidas son 170 x 170 mm (6.7 x 6.7 pulgadas) y consta de 4 orificios de montaje.</p>
+<h3 id="expansi%C3%B3n">Expansión</h3>
+<p>Al ser un factor de forma muy pequeño sólo permite una sóla ranura de expansión, y que es normalmente ocupada por la tarjeta gráfica.</p>
+<p>Además de ello, al no haber espacio para una ranura M.2 para colocar dispositivos de almacenamiento, los fabricante han optado por colocarlo detrás así abriendo un nuevo paradigma de expansión.</p>
+<table>
+<thead>
+<tr>
+<th>fig. 5</th>
+<th>fig. 6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://images.anandtech.com/doci/12634/boardfront_575px.jpg" alt="fig. 5"></td>
+<td><img src="https://images.anandtech.com/doci/12634/boardbackGBT2_575px.jpg" alt="fig. 6"></td>
+</tr>
+</tbody>
+</table>
+<p>En este formato, hay que destacar que hay más placas base con otros tipos de arquitectura de procesador como ARM en el que se prescinden muchas cosas de lo que sí llevan en placas Intel/AMD.</p>
+<p><img src="https://www.androidpimp.com/wp-content/uploads/2022/07/ITX-3588J-RK3588-Motherboard.jpg" alt="fig. 7"></p>
+<p>Se puede apreciar claramente que tienen otros tipos de expansión, carece de interfaz PCIe x16, y en su lugar es PCIe x8. Una toma de energía más pequeña (8 pines) y carecen de bancos de RAM en formato DIMM.</p>
+<h2 id="notas-al-pie">Notas al pie</h2>
+<p><sup>1</sup>Investigación propia, siendo en orden ATX, Micro-ATX y Mini-ITX. Basado en las páginas <a href="https://pccomponentes.com/">PcComponentes</a>: 242, 178 y 32 resultados, <a href="https://pcpartpicker.com/">PCPARTPICKER</a>: 1730, 1482 y 368 resultados y <a href="https://wipoid.com/">Wipoid</a>: 156, 120 y 13 resultados.</p>
+<h2 id="fuentes">Fuentes</h2>
+<p><a href="https://web.archive.org/web/20120725150314/http://www.formfactors.org/developer/specs/atx2_2.pdf">ATX Specifications</a></p>
+<p><a href="https://xdevs.com/doc/_PC_HW/Form_factors/matxspe1.2.pdf">Micro-ATX Specifications</a></p>
+<p><a href="https://web.archive.org/web/20110613223644/http://www.via.com.tw/en/downloads/whitepapers/initiatives/spearhead/ini_mini-itx.pdf">VIA Mini-ITX Whitepaper</a></p>
+<p><a href="https://www.androidpimp.com/embedded/itx-3588j-embedded-hardware/#3-interfaces-amp-lyaout">Placa Mini-ITX ARM</a></p>
+<h2 id="autor%C3%ADa">Autoría</h2>
+<p>Pedro Pérez Banda</p>
+<p>Domingo, 25 septiembre de 2022</p>
+<p>Sistemas Informáticos</p>
+<p>1º DAW</p>
+
+</body>
+</html>
