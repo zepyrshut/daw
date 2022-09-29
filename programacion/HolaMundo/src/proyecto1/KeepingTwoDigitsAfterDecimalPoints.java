@@ -1,6 +1,5 @@
 package proyecto1;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public class KeepingTwoDigitsAfterDecimalPoints {
@@ -14,10 +13,16 @@ public class KeepingTwoDigitsAfterDecimalPoints {
 		double price = 12.50;
 
 		double priceWithTax = ((price * tax) / 100) + price;
+		
+		//double priceWithTax = price * 1.21;
 
-		df.setRoundingMode(RoundingMode.UP);
+		//df.setRoundingMode(RoundingMode.UP);
+		
+		priceWithTax = Math.round(priceWithTax * 100.0) / 100.0;
 
-		System.out.println(df.format(priceWithTax));
+		//System.out.println(df.format(priceWithTax));
+		System.out.println(priceWithTax);
+		
 
 	}
 
