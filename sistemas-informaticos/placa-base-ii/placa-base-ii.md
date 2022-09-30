@@ -29,8 +29,12 @@ Monta el *chipset* X299.
 
 El *chipset* fue lanzado en 2017, en 22 nanómetros.
 
-Las características más destacadas son:
-- 
+Las características más destacadas son, según las especificaciones de MSI (cosa que puede diferir desde Intel):
+- Hasta 4 canales en memoria RAM
+- XMP (Ideal para *overclocking*)
+- SLI / CrossFire
+- 8 puertos SATA
+- 2 puertos M.2 PCIe
 
 > Información: Los fabricantes normalmente ponen de nombre comercial el chipset que llevan + algún gancho.
 
