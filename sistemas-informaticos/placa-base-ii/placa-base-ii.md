@@ -145,20 +145,6 @@ Sé que no es el VMWare Pro, pero no he tenido la necesidad de hacerlo, en este 
 
 ![](vm-player.JPG)
 
-### Bonus track
-Antes que nada, no puedo aportar capturas de mi trabajo, pero mi portafolio como administrador de sistemas es garantizar la alta disponibilidad de los contenedores Docker, vendemos *Software como servicio (SaaS)*, sector hostelería.
-
-Hay instalado CRM, servicios de reservas y bots que gestionan reservas y notificaciones a los clientes para distintos restaurantes.
-
-Luego, el servidor lo tenemos físicamente en Mazagón, con un Hypervisor de tipo 1, el XCP-ng, sobre él, instalados PfSense, varias copias clonadas de Debian y lo mismo para Windows Server.
-
-### Bonus track II
-Como *hobby*, también lo mismo, pero en un VPS de Heztner. Debian y sobre él, Docker con distintas bases de datos, un repositorio git autoalojado y cosas que experimento.
-
-[Web personal](https://pedroperez.dev) | [Docker](https://docker.pedroperez.dev) | [Git](https://git.pedroperez.dev) | [GitHub](https://github.com/zepyrshut)
-
-Todo está alojado en el VPS, gestionado por *nginx*, configurado como proxy inverso, con sus certificados correspondientes.
-
 ## Autoría
 > Pedro Pérez Banda
 
