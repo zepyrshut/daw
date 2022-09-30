@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+  <bin></bin>
+  <boot></boot>
+  <dev></dev>
+  <etc></etc>
+  <home>
+    <user1>
+      <documents></documents>
+    </user1>
+    <user>
+      <music></music>
+    </user>
+  </home>
+  <lib></lib>
+  <media></media>
+  <opt></opt>
+  <proc></proc>
+  <root></root>
+  <sbin></sbin>
+  <srv></srv>
+  <sys></sys>
+  <tmp></tmp>
+  <usr>
+    <bin></bin>
+    <include></include>
+    <lib></lib>
+    <local></local>
+    <sbin></sbin>
+    <share></share>
+    <src></src>
+  </usr>
+  <var></var>
+</system>

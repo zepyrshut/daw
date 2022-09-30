@@ -67,8 +67,68 @@ En el anterior ejercicio decidí usar *snake_case* para los nombres de de las et
 ```
 
 ### Ejercicio 4
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book isbn="Something ISBN number">
+    <bookName>Something Name</bookName>
+    <author>Something Author</author>
+    <yearOfRelease>2022</yearOfRelease>
+  </book>
+  <book isbn="Another ISBN number">
+    <bookName>Another Name</bookName>
+    <author>Another Author</author>
+    <yearOfRelease>2021</yearOfRelease>
+  </book>
+  <book isbn="Yet Another ISBN number">
+    <bookName>Yet Another Name</bookName>
+    <author>Yet Another Author</author>
+    <yearOfRelease>2020</yearOfRelease>
+  </book>
+  <book isbn="Yet Another Again ISBN number">
+    <bookName>Yet Another Again Name</bookName>
+    <author>Yet Another Again Author</author>
+    <yearOfRelease>2019</yearOfRelease>
+  </book>
+  <book isbn="Yet Another Again Again ISBN number">
+    <bookName>Yet Another Again Again Name</bookName>
+    <author>Yet Another Again Again Author</author>
+    <yearOfRelease>2018</yearOfRelease>
+  </book>
+</library>
+```
 
 ### Ejercicio 5
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<s:library xmlns:s="http://www.library.com/sell">
+  <s:book isbn="Something ISBN number">
+    <s:bookName>Something Name</s:bookName>
+    <s:author>Something Author</s:author>
+    <s:yearOfRelease>2022</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Another ISBN number">
+    <s:bookName>Another Name</s:bookName>
+    <s:author>Another Author</s:author>
+    <s:yearOfRelease>2021</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Yet Another ISBN number">
+    <s:bookName>Yet Another Name</s:bookName>
+    <s:author>Yet Another Author</s:author>
+    <s:yearOfRelease>2020</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Yet Another Again ISBN number">
+    <s:bookName>Yet Another Again Name</s:bookName>
+    <s:author>Yet Another Again Author</s:author>
+    <s:yearOfRelease>2019</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Yet Another Again Again ISBN number">
+    <s:bookName>Yet Another Again Again Name</s:bookName>
+    <s:author>Yet Another Again Again Author</s:author>
+    <s:yearOfRelease>2018</s:yearOfRelease>
+  </s:book>
+</s:library>
+```
 
 ### Ejercicio 6
 a) Bien formado.
@@ -172,11 +232,6 @@ Analizado con Visual Studio Code, con el *plugin* XML, desarrollado por Red Hat.
   <total>60.56</total>
 </ticket>
 ```
-
-
-
-
-
 
 > Realizado por Pedro Pérez Banda como actividad de Lenguaje de Marcas. 
 > 1° de DAW - 30 de septiembre 2022.
