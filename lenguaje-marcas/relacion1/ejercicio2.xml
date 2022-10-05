@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <disc>
+    <title>Thriller</title>
+    <artist>Michael Jackson</artist>
+    <country>USA</country>
+    <year>1982</year>
+    <sales>65 millions</sales>
+  </disc>
+  <disc>
+    <title>The Dark Side Of The Moon</title>
+    <artist>Pink Floyd</artist>
+    <country>UK</country>
+    <year>1973</year>
+    <sales>50 millions</sales>
+  </disc>
+  <disc>
+    <title>Back In Black</title>
+    <artist>AC/DC</artist>
+    <country>Australia</country>
+    <year>1980</year>
+    <sales>50 millions</sales>
+  </disc>
+</catalog>

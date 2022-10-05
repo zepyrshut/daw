@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <book isbn="Something ISBN number">
+    <bookName>Something Name</bookName>
+    <author>Something Author</author>
+    <yearOfRelease>2022</yearOfRelease>
+  </book>
+  <book isbn="Another ISBN number">
+    <bookName>Another Name</bookName>
+    <author>Another Author</author>
+    <yearOfRelease>2021</yearOfRelease>
+  </book>
+  <book isbn="Yet Another ISBN number">
+    <bookName>Yet Another Name</bookName>
+    <author>Yet Another Author</author>
+    <yearOfRelease>2020</yearOfRelease>
+  </book>
+  <book isbn="Yet Another Again ISBN number">
+    <bookName>Yet Another Again Name</bookName>
+    <author>Yet Another Again Author</author>
+    <yearOfRelease>2019</yearOfRelease>
+  </book>
+  <book isbn="Yet Another Again Again ISBN number">
+    <bookName>Yet Another Again Again Name</bookName>
+    <author>Yet Another Again Again Author</author>
+    <yearOfRelease>2018</yearOfRelease>
+  </book>
+</library>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<card>
+  <name>John</name>
+  <surname>Doe</surname>
+  <job>Architect</job>
+  <company>Contoso</company>
+  <position>CEO</position>
+  <email>johndoe@contoso.com</email>
+  <phone>555-555-5555</phone>
+</card>

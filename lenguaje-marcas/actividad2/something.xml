@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+  <typeOfTable>CD en orferta</typeOfTable>
+  <album>
+    <name>Still got the blues</name>
+    <artist>Gary Moore</artist>
+    <country>UK</country>
+    <company>Virgin Records</company>
+    <price>10.20</price>
+    <release>1990</release>
+  </album>
+  <album>
+    <name>One night only</name>
+    <artist>Bee Gees</artist>
+    <country>UK</country>
+    <company>Polydor</company>
+    <price>10.90</price>
+    <release>1998</release>
+  </album>
+  <album>
+    <name>When a man loves a woman</name>
+    <artist>Percy Sledge</artist>
+    <country>USA</country>
+    <company>Atlantic</company>
+    <price>8.70</price>
+    <release>1987</release>
+  </album>
+  <album>
+    <name>Big Willie style</name>
+    <artist>Will Smith</artist>
+    <country>USA</country>
+    <company>Columbia</company>
+    <price>9.90</price>
+    <release>1997</release>
+  </album>
+  <album>
+    <name>La cancion de Juan Perro</name>
+    <artist>Radio Futura</artist>
+    <country>España</country>
+    <company>Sony Music-Ariola</company>
+    <price>9.90</price>
+    <release>1987</release>
+  </album>
+  <album>
+    <name>The dock of the bay</name>
+    <artist>Otis Redding</artist>
+    <country>USA</country>
+    <company>Atlantic</company>
+    <price>7.90</price>
+    <release>1987</release>
+  </album>
+</table>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world_geography>
+  <continents>
+    <continent>
+      <name>Europe</name>
+      <countries>
+        <country>
+          <name capital="Madrid">Spain</name>
+        </country>
+        <country>
+          <name capital="Berlin">Germany</name>
+        </country>
+      </countries>
+    </continent>
+  </continents>
+</world_geography>

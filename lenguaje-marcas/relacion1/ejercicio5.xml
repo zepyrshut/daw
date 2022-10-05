@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:library xmlns:s="http://www.library.com/sell">
+  <s:book isbn="Something ISBN number">
+    <s:bookName>Something Name</s:bookName>
+    <s:author>Something Author</s:author>
+    <s:yearOfRelease>2022</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Another ISBN number">
+    <s:bookName>Another Name</s:bookName>
+    <s:author>Another Author</s:author>
+    <s:yearOfRelease>2021</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Yet Another ISBN number">
+    <s:bookName>Yet Another Name</s:bookName>
+    <s:author>Yet Another Author</s:author>
+    <s:yearOfRelease>2020</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Yet Another Again ISBN number">
+    <s:bookName>Yet Another Again Name</s:bookName>
+    <s:author>Yet Another Again Author</s:author>
+    <s:yearOfRelease>2019</s:yearOfRelease>
+  </s:book>
+  <s:book isbn="Yet Another Again Again ISBN number">
+    <s:bookName>Yet Another Again Again Name</s:bookName>
+    <s:author>Yet Another Again Again Author</s:author>
+    <s:yearOfRelease>2018</s:yearOfRelease>
+  </s:book>
+</s:library>

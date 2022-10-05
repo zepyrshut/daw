@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<ticket>
+  <name size="heading-1">Restaurante Seindor</name>
+  <business>
+    <businessName>Restaurante</businessName>
+    <taxCode>B12345678</taxCode>
+  </business>
+  <address>
+    <street>Avenida Principal, 1</street>
+    <postalCode>28001</postalCode>
+    <city>Madrid</city>
+  </address>
+  <contact>
+    <phone>91234567</phone>
+    <email>info@seindor.com</email>
+    <website>seindor.com</website>
+  </contact>
+
+  <horizontalRule style="dotted" />
+
+  <ticketNumber>A103837</ticketNumber>
+  <date>
+    <day>28</day>
+    <month>10</month>
+    <year>2012</year>
+  </date>
+
+  <horizontalRule style="dotted" />
+
+  <dinners>002</dinners>
+  <page>001</page>
+
+  <horizontalRule style="dotted" />
+
+  <table>
+    <element>
+      <units>2</units>
+      <description>PAN</description>
+      <price>1.20</price>
+      <total>2.40</total>
+    </element>
+    <element>
+      <units>1</units>
+      <description>BLMIREIA</description>
+      <price>12.00</price>
+      <total>1.00</total>
+    </element>
+    <element>
+      <units>1</units>
+      <description>PARRILLADA VERDURAS</description>
+      <price>9.30</price>
+      <total>9.30</total>
+    </element>
+    <element>
+      <units>2</units>
+      <name>PAELLA PESCADO</name>
+      <price>13.90</price>
+      <total>27.80</total>
+    </element>
+    <element>
+      <units>1</units>
+      <name>TARTA QUESO FRESCO</name>
+      <price>4.00</price>
+      <total>4.00</total>
+    </element>
+    <element>
+      <units>1</units>
+      <name>MENTA POLEO</name>
+      <price>1.10</price>
+      <total>1.10</total>
+    </element>
+  </table>
+
+  <horizontalRule style="dotted" />
+
+  <base>56.60</base>
+  <tax>7.00</tax>
+  <taxApplied>3.96</taxApplied>
+
+  <horizontalRule style="dotted" />
+
+  <total>60.56</total>
+</ticket>
