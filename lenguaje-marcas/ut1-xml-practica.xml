@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<system>
+<systemRoot>
   <bin></bin>
   <boot></boot>
   <dev></dev>
@@ -31,4 +31,4 @@
     <src></src>
   </usr>
   <var></var>
-</system>
+</systemRoot>
