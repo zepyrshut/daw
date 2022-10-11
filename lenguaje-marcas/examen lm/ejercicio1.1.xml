@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento>
+  <p>
+    texto
+    <destacar importancia="1">texto XML</destacar>
+  </p>
+  <p>texto etiqueta &lt;documento&gt;</p>
+  <p>texto</p>
+  <imagen fichero="imagen.gif" />
+</documento>

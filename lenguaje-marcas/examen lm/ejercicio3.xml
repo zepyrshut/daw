@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+  <numeroFactura num="123" />
+  <empresa>
+    <nombre>Equipos Digitales S.L.</nombre>
+    <direccion>
+      <calle>Av. Malaga</calle>
+      <ciudad>Madrid</ciudad>
+      <cp>23011</cp>
+    </direccion>
+    <cif>Q921321543</cif>
+    <telefonos>
+      <fijo>91.777.6123132</fijo>
+      <fax>91.777.66.991312312</fax>
+    </telefonos>
+  </empresa>
+  <fecha dia="22" mes="01" anio="2022" />
+  <numeroPedido num="131" />
+  <formaPago form="EFECTIVO" />
+  <cliente>
+    <numeroCliente>879</numeroCliente>
+    <datos>
+      <nombre>Darío Bueno Gutiérrez</nombre>
+      <direccion>
+        <calle>Av. Oporto n7 4d</calle>
+        <ciudad>Madrid</ciudad>
+        <cp>28043</cp>
+        <provincia>Madrid</provincia>
+      </direccion>
+    </datos>
+  </cliente>
+  <venta>
+    <producto ref="MII9300F/8" cant="1">
+      <descripcion>Micro Pentium IV</descripcion>
+      <precios cant="230" iva="16" importe="266,80" />
+    </producto>
+    <producto ref="MB8QDIP4" cant="1">
+      <descripcion>Placa base QDI P4</descripcion>
+      <precios cant="180" iva="16" importe="208,80" />
+    </producto>
+    <producto ref="MEDD512M32" cant="2">
+      <descripcion>DIMM DDR 512BM</descripcion>
+      <precios cant="40" iva="16" importe="92,80" />
+    </producto>
+    <producto ref="HD250GSA" cant="4">
+      <descripcion>Disco duro 250GB</descripcion>
+      <precios cant="120" iva="16" importe="556,80" />
+    </producto>
+  </venta>
+  <facturacion bi="970,00" iva="16" cuotaIva="155,20" total="1125,20" />
+</factura>
