@@ -28,7 +28,9 @@ public class Main {
 //
 //        System.out.println(bool2);
 
-        BiggestNumber.biggestNumber();
+        //BiggestNumber.biggestNumber();
+
+        PrimeNumbers.getFirstFiftyPrimeNumbers();
 
 
 
