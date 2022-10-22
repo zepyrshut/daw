@@ -1,36 +1,14 @@
 package main;
 
-import cypher.Caesar;
-import numbers.*;
-import strings.CheckPalindrome;
-
-import java.util.Scanner;
+import numbers.Numbers;
 
 public class Main {
 
     public static void main(String[] args) {
 
-       // SentinelValue.sentinelValue();
+        //Numbers.fibonacciSeries(10);
 
-       // GreatestCommonDivisor.findGreatestCommonDivisor(8, 4);
-
-        //PredictingFutureTuition.predictingFutureTuition(10000, 7);
-
-        //String hexNumber = DecToHex.decToHex(10);
-
-//        boolean bool = CheckPalindrome.checkIfPalindrome("aba");
-//
-//        System.out.println(bool);
-//
-//        String str = "aabbaa";
-//
-//        boolean bool2 = str.equals(new StringBuilder(str).reverse().toString());
-//
-//        System.out.println(bool2);
-
-        //BiggestNumber.biggestNumber();
-
-        PrimeNumbers.getFirstFiftyPrimeNumbers();
+        System.out.println(Numbers.hexToDec("2FAC"));
 
 
 

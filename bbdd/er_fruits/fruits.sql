@@ -87,12 +87,12 @@ insert into comb_fruit_variety (fruit_id, variety_id) values (3, 6);
 insert into comb_fruit_variety (fruit_id, variety_id) values (3, 7);
 
 insert into parcel_has_comb (parcel_id, comb_id) values (1, 1);
-insert into parcel_has_comb (parcel_id, comb_id) values (1, 2);
-insert into parcel_has_comb (parcel_id, comb_id) values (1, 3);
-insert into parcel_has_comb (parcel_id, comb_id) values (2, 4);
-insert into parcel_has_comb (parcel_id, comb_id) values (2, 5);
-insert into parcel_has_comb (parcel_id, comb_id) values (3, 6);
-insert into parcel_has_comb (parcel_id, comb_id) values (3, 7);
+insert into parcel_has_comb (parcel_id, comb_id) values (2, 2);
+insert into parcel_has_comb (parcel_id, comb_id) values (3, 3);
+insert into parcel_has_comb (parcel_id, comb_id) values (4, 4);
+insert into parcel_has_comb (parcel_id, comb_id) values (5, 5);
+insert into parcel_has_comb (parcel_id, comb_id) values (6, 6);
+insert into parcel_has_comb (parcel_id, comb_id) values (7, 7);
 
 insert into employee (name, birth_date) values ('employee 1', '1980-01-01');
 insert into employee (name, birth_date) values ('employee 2', '1980-01-01');
